@@ -58,7 +58,7 @@
         </div>
     </div>
    
-   <div id="footer"> Krijuar nga :&nbsp; Elza  & Argjenta Caka &nbsp;<p><a href="www.facebook.com">CEO</a></p></div>
+   <div id="footer"> Krijuar nga :&nbsp; Elza Krasniqi  & Argjenta Çaka &nbsp;<p><a href="www.facebook.com">CEO</a></p></div>
   </div>
 </body>
 </html>
