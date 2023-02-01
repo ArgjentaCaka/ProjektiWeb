@@ -33,7 +33,7 @@
 <?php
     $imageSource = "images/";
     include 'includes/db.php';
-    $sql = "SELECT * FROM recipe where isHealthy=1 ORDER BY created_at DESC";
+    $sql = "SELECT * FROM recipe ORDER BY created_at DESC";
     $result = $link->query($sql);
 
     if ($result->num_rows > 0) {
@@ -58,7 +58,7 @@
     $link->close();
     ?>
         </div>
-        <div class="sidebar">
+	      <div class="sidebar">
         <h3>Latest Recipes </h3>
         <?php
           include 'includes/db.php';
@@ -91,7 +91,7 @@
         </div>
       </div>
    
-   <div id="footer"> Krijuar nga :&nbsp; Elza Krasniqi & Argjenta Çaka &nbsp;<p><a href="www.facebook.com">CEO</a></p></div>
+   <div id="footer"> Krijuar nga :&nbsp; Elza Krasniqi &  &nbsp;<p><a href="www.facebook.com">CEO</a></p></div>
   </div>
 </body>
 </html>
