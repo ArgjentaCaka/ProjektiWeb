@@ -149,7 +149,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){ // kur butoni submit klikohet
       <p>&nbsp;</p>
 		</div>
     </div>
-    <div id="footer"> Krijuar nga :&nbsp; Albesa Halili & Fitore Ramadani&nbsp; | YummyBite 2021  <p><a href="www.facebook.com">CEO</a></p></div>
+    <div id="footer"> Krijuar nga :&nbsp; Argjenta Çaka & Elza Krasniqi&nbsp; | YummyBite 2021  <p><a href="www.facebook.com">CEO</a></p></div>
   </div>
   </div>
 </body>
