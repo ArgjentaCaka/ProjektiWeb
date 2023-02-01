@@ -14,12 +14,13 @@
     <div id="header">
       <div id="logo">
         <div id="logo_text">
-          <h1><a href="index"><span class="logo_colour"><font color="#000000">Yummy</font>Bite</span></a></h1>
+          <h1><a href="index.php"><span class="logo_colour"><font color="#000000">Yummy</font>Bite</span></a></h1>
           <h2>The foodie place</h2>
         </div>
       </div>
-	
-	
+	<?php
+	include 'nav.php';
+	?>
     </div>
         <div id="site_content">
 <div id="content">
@@ -32,7 +33,7 @@
       </div>
     </div>
    
-   <div id="footer"> Krijuar nga :&nbsp; Elza Krasniqi & Arxhenta Caka  &nbsp;<p><a href="www.facebook.com">CEO</a></p></div>
+   <div id="footer"> Krijuar nga :&nbsp; Elza Krasniqi & Argjenta Çaka &nbsp;<p><a href="www.facebook.com">CEO</a></p></div>
   </div>
 </body>
 </html>
