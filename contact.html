@@ -1,3 +1,7 @@
+<?php
+include 'auth.php';
+include("../includes/db.php");
+?>
 <!DOCTYPE HTML>
 <html>
 
@@ -14,11 +18,13 @@
     <div id="header">
       <div id="logo">
         <div id="logo_text">
-          <h1><a href="index.html"><span class="logo_colour"><font color="#000000">Yummy</font>Bite</span></a></h1>
+          <h1><a href="index.php"><span class="logo_colour"><font color="#000000">Yummy</font>Bite</span></a></h1>
           <h2>Dashboard</h2>
         </div>
       </div>
-
+	<?php
+	include 'nav.php';
+	?>
 
     </div>
     <div id="site_content">
@@ -33,12 +39,33 @@
               <th>Message</th>
               <th>Time</th>
             </tr>
-           </table>
+            <?php
+                $sql = "SELECT * FROM contact ORDER BY created_at DESC";
+                $result = $link->query($sql); // query per mi marr te dhenat prej tabeles contact
+            
+                if ($result->num_rows > 0) {
+                  // output data of each row
+                  while($row = $result->fetch_assoc()) {
+            ?>
+            <tr>
+              <td><?php echo $row['fullName'];?></td>
+              <td><?php echo $row['subject'];?></td>
+              <td><?php echo $row['email'];?></td>
+              <td><?php echo $row['message'];?></td>
+              <td><?php echo $row['created_at'];?></td>
+            </tr>
+            <?php
+                  }
+                }else{
+                  echo '<p>No results</p>';
+                }
+            ?>
+          </table>
           </div>
         </div>
     </div>
    
-   <div id="footer"> Krijuar nga :&nbsp; Argjenta Caka & Elza Krasniqi &nbsp;<p><a href="www.facebook.com">CEO</a></p></div>
+   <div id="footer"> Krijuar nga :&nbsp; Argjenta Çaka & Elza Krasniqi &nbsp;<p><a href="www.facebook.com">CEO</a></p></div>
   </div>
 </body>
 </html>
