@@ -79,7 +79,7 @@ if(isset($_GET['id'])){ ?>
   </div>
 </div>
    
-   <div id="footer"> Krijuar nga :&nbsp; Albesa Halili & Fitore Ramadani &nbsp;<p><a href="www.facebook.com">CEO</a></p></div>
+   <div id="footer"> Krijuar nga :&nbsp; Argjenta Çaka & Elza Krasniqi &nbsp;<p><a href="www.facebook.com">CEO</a></p></div>
   </div>
 </body>
 </html>
